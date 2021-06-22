@@ -1,0 +1,56 @@
+-Our First Project:
+
+SUSTAIN HR LTD.
+Sustain HR Ltd. is a Human Resources Practices company that independently works of any other organisation and provides consultancy within its profession.
+It is located within the business chains area of the city.Currently; it employs 150 workers. 
+Due to the new pandemic regulations, the offices within the business chains area have to be disinfected based on the schedule given by the disinfection company. 
+Based on the schedule, Sustain HR Ltd. has to empty its offices between 1 pm and 3 pm for the disinfection services to occur. 
+Therefore; the Sustain HR Ltd.`s employees have stop doing their duties between 1pm and 3pm. 
+In order to inform everyone, in case the employees lose track of the time, the security is commissioned to start the alarm for everyone to notice the time and leave.
+The issue is that; the security forgets about the new regulations and do not seem to adapt. 
+Therefore; Sustain HR Ltd.`s R&D department wants to create a code to implement and run in a program to start the alarm automatically.
+
+The code for this problem:
+
+import datetime
+print (datetime.datetime.today().strftime("%H"))
+print(datetime.datetime.today().strftime("%M"))
+hour=int(input("Enter a Hour to Set Alarm: "))
+minute=int(input("Enter a Minute to Set Alarm:: "))
+while True:
+    if hour == int(datetime.datetime.today().strftime("%H")) and minute == int(datetime.datetime.today().strftime("%M")):
+        print ("Alarm Is Set")
+        break
+
+    else:
+        print ("Alarm Is Set")
+        break
+        
+        
+-Our Second Project:
+
+At our company SUSTAIN HR LTD, we want to ensure the security of the company's computers by programming a 
+new password system on the computers used by our employees and managers. 
+However, as a result of the survey we conducted with the employees, we saw that the employees forget their usernames and passwords very often, 
+and therefore they have problems every time they log into their computers.
+That's why we decided to program a software so that employees don't forget their passwords every time while ensuring the security of company computers. 
+This software uses the computer's clock to generate the username and password accordingly. 
+In other words, to log on to the computer, you must enter the current hour and minute as a username and password. 
+Thus, employees will only need to look at the time to log in to computers. Time as username (e.g., 16 or 22) and minutes as password (e.g., 45 or 06).
+
+The code for this problem:
+
+import datetime
+print ("Welcome SUSTAIN HR LTD")
+print ("System Time:")
+print (datetime.datetime.today().strftime("%H"))
+print (datetime.datetime.today().strftime("%M"))
+hour = int(input("Enter Your Username: "))
+minute = int(input("Enter Your Password: "))
+while True:
+    if hour == int(datetime.datetime.today().strftime("%H")) and minute == int(datetime.datetime.today().strftime("%M")):
+        print("Welcome")
+        break
+    else:
+        print("Wrong Password")
+        break
